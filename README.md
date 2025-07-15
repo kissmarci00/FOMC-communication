@@ -2,7 +2,7 @@
 Replication files for 'How can a Fed Chair not be an actor'? - Effects of verbal and non-verbal FOMC tone on asset prices
 
 
-# Text sentiment analysis
+# Text sentiment analysis and main analysis
 
 1. Data/Fed_text.xlsx file contain FOMC statements and press conference transcripts between 2011 and 2025
 2. Run text_topic_class.py to assign topic, sentiment and uncertainty score to each textual record (baseline model is where joined=1, meaning that consecutive sentences belonging to the same topics are merged)
@@ -20,7 +20,8 @@ Replication files for 'How can a Fed Chair not be an actor'? - Effects of verbal
 
 1. Run audio_manipulation.py to download FOMC press conference audio files from YouTube and cut them into segments based on Data/timestamps_raw.xlsx
 2. Audio_emotion_recogntition.ipynb runs SER models on the segments generated above (recommende to run on a high-capacity server or Google Colab) 
-  - Output: Emotion of each audio segment according to the chosen SER model. Data/voicetonescores.xlsx was created based on these outputs. 
+  - Output: Emotion of each audio segment according to the chosen SER model. Data/voicetonescores.xlsx was created based on these outputs.
+
 
 
    
